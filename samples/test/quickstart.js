@@ -42,9 +42,10 @@ describe('Quickstart', () => {
   });
 
   it('should run quickstart', async () => {
-    //TODO: remove this line
-    // eslint-disable-next-line no-unused-vars
-    const stdout = execSync('node ./quickstart.js', {cwd});
-    //assert(stdout, stdout !== null);
+    const stdout = execSync(
+      `node ./quickstart.js ${projectId}`,
+      {cwd}
+    );
+    assert(stdout, stdout !== null);
   });
 });

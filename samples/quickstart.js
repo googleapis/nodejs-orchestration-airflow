@@ -13,7 +13,7 @@
 
 'use strict';
 
-async function main() {
+async function main(projectId = 'my-project-id', location = 'us-central1') {
   // [START composer_list_image_versions]
   // Imports the Google Cloud client library
 
@@ -29,9 +29,9 @@ async function main() {
   const client = new ImageVersionsClient();
 
   async function listImageVersions() {
-    const [versions] = await client.listImageVersions({
-      parent: 'projects/long-door-651/locations/us-central1',
-    });
+    const [versions] = await client.listImageVersions(
+      {parent: `projects/${projectId}/locations/${location}`}
+    );
     console.info(versions);
   }
   listImageVersions();
