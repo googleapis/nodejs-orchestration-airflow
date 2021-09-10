@@ -270,11 +270,11 @@ export class EnvironmentsClient {
     this.environmentsStub = this._gaxGrpc.createStub(
       this._opts.fallback
         ? (this._protos as protobuf.Root).lookupService(
-          'google.cloud.orchestration.airflow.service.v1.Environments'
-        )
+            'google.cloud.orchestration.airflow.service.v1.Environments'
+          )
         : // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        (this._protos as any).google.cloud.orchestration.airflow.service.v1
-          .Environments,
+          (this._protos as any).google.cloud.orchestration.airflow.service.v1
+            .Environments,
       this._opts,
       this._providedCustomServicePath
     ) as Promise<{[method: string]: Function}>;
@@ -429,12 +429,12 @@ export class EnvironmentsClient {
     optionsOrCallback?:
       | CallOptions
       | Callback<
-        protos.google.cloud.orchestration.airflow.service.v1.IEnvironment,
-        | protos.google.cloud.orchestration.airflow.service.v1.IGetEnvironmentRequest
-        | null
-        | undefined,
-        {} | null | undefined
-      >,
+          protos.google.cloud.orchestration.airflow.service.v1.IEnvironment,
+          | protos.google.cloud.orchestration.airflow.service.v1.IGetEnvironmentRequest
+          | null
+          | undefined,
+          {} | null | undefined
+        >,
     callback?: Callback<
       protos.google.cloud.orchestration.airflow.service.v1.IEnvironment,
       | protos.google.cloud.orchestration.airflow.service.v1.IGetEnvironmentRequest
@@ -535,13 +535,13 @@ export class EnvironmentsClient {
     optionsOrCallback?:
       | CallOptions
       | Callback<
-        LROperation<
-          protos.google.cloud.orchestration.airflow.service.v1.IEnvironment,
-          protos.google.cloud.orchestration.airflow.service.v1.IOperationMetadata
+          LROperation<
+            protos.google.cloud.orchestration.airflow.service.v1.IEnvironment,
+            protos.google.cloud.orchestration.airflow.service.v1.IOperationMetadata
+          >,
+          protos.google.longrunning.IOperation | null | undefined,
+          {} | null | undefined
         >,
-        protos.google.longrunning.IOperation | null | undefined,
-        {} | null | undefined
-      >,
     callback?: Callback<
       LROperation<
         protos.google.cloud.orchestration.airflow.service.v1.IEnvironment,
@@ -794,13 +794,13 @@ export class EnvironmentsClient {
     optionsOrCallback?:
       | CallOptions
       | Callback<
-        LROperation<
-          protos.google.cloud.orchestration.airflow.service.v1.IEnvironment,
-          protos.google.cloud.orchestration.airflow.service.v1.IOperationMetadata
+          LROperation<
+            protos.google.cloud.orchestration.airflow.service.v1.IEnvironment,
+            protos.google.cloud.orchestration.airflow.service.v1.IOperationMetadata
+          >,
+          protos.google.longrunning.IOperation | null | undefined,
+          {} | null | undefined
         >,
-        protos.google.longrunning.IOperation | null | undefined,
-        {} | null | undefined
-      >,
     callback?: Callback<
       LROperation<
         protos.google.cloud.orchestration.airflow.service.v1.IEnvironment,
@@ -936,13 +936,13 @@ export class EnvironmentsClient {
     optionsOrCallback?:
       | CallOptions
       | Callback<
-        LROperation<
-          protos.google.protobuf.IEmpty,
-          protos.google.cloud.orchestration.airflow.service.v1.IOperationMetadata
+          LROperation<
+            protos.google.protobuf.IEmpty,
+            protos.google.cloud.orchestration.airflow.service.v1.IOperationMetadata
+          >,
+          protos.google.longrunning.IOperation | null | undefined,
+          {} | null | undefined
         >,
-        protos.google.longrunning.IOperation | null | undefined,
-        {} | null | undefined
-      >,
     callback?: Callback<
       LROperation<
         protos.google.protobuf.IEmpty,
@@ -1077,12 +1077,12 @@ export class EnvironmentsClient {
     optionsOrCallback?:
       | CallOptions
       | PaginationCallback<
-        protos.google.cloud.orchestration.airflow.service.v1.IListEnvironmentsRequest,
-        | protos.google.cloud.orchestration.airflow.service.v1.IListEnvironmentsResponse
-        | null
-        | undefined,
-        protos.google.cloud.orchestration.airflow.service.v1.IEnvironment
-      >,
+          protos.google.cloud.orchestration.airflow.service.v1.IListEnvironmentsRequest,
+          | protos.google.cloud.orchestration.airflow.service.v1.IListEnvironmentsResponse
+          | null
+          | undefined,
+          protos.google.cloud.orchestration.airflow.service.v1.IEnvironment
+        >,
     callback?: PaginationCallback<
       protos.google.cloud.orchestration.airflow.service.v1.IListEnvironmentsRequest,
       | protos.google.cloud.orchestration.airflow.service.v1.IListEnvironmentsResponse
