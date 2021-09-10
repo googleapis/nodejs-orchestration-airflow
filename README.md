@@ -72,9 +72,9 @@ const {ImageVersionsClient} = require('@google-cloud/orchestration-airflow');
 const client = new ImageVersionsClient();
 
 async function listImageVersions() {
-  const [versions] = await client.listImageVersions({
-    parent: 'projects/long-door-651/locations/us-central1',
-  });
+  const [versions] = await client.listImageVersions(
+    {parent: `projects/${projectId}/locations/${location}`}
+  );
   console.info(versions);
 }
 listImageVersions();
