@@ -29,10 +29,10 @@ const execSync = cmd => cp.execSync(cmd, {encoding: 'utf-8'});
 
 const cwd = path.join(__dirname, '..');
 
-const client = new {ImageVersionsClient}();
+const client = new ImageVersionsClient();
 
 describe('Quickstart', () => {
-  //TODO: remove this if not using the projectId 
+  //TODO: remove this if not using the projectId
   // eslint-disable-next-line no-unused-vars
   let projectId;
 
@@ -42,8 +42,8 @@ describe('Quickstart', () => {
   });
 
   it('should run quickstart', async () => {
-  //TODO: remove this line 
-  // eslint-disable-next-line no-unused-vars  
+  //TODO: remove this line
+  // eslint-disable-next-line no-unused-vars
     const stdout = execSync(
       `node ./quickstart.js`,
       {cwd}

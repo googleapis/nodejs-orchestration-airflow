@@ -15,7 +15,7 @@
 
 async function main() {
 
-  // [START nodejs_orchestration_airflow_quickstart]
+  // [START composer_list_image_versions]
   // Imports the Google Cloud client library
 
   // remove this line after package is released
@@ -27,17 +27,16 @@ async function main() {
 
   // Creates a client
   // eslint-disable-next-line no-unused-vars
-  const client = new {ImageVersionsClient}();
+  const client = new ImageVersionsClient();
 
-  //TODO(library generator): write the actual function you will be testing
-  async function doSomething() {
-   console.log('DPE! Change this code so that it shows how to use the library! See comments below on structure.')
-   // const [thing] = await client.methodName({
-   // });
-   // console.info(thing);
+  async function listImageVersions() {
+    const [versions] = await client.listImageVersions(
+      {parent: 'projects/long-door-651/locations/us-central1'}
+    );
+    console.info(versions);
   }
-  doSomething();
-  // [END nodejs_orchestration_airflow_quickstart]
+  listImageVersions();
+  // [END composer_list_image_versions]
 }
 
 main(...process.argv.slice(2)).catch(err => {
