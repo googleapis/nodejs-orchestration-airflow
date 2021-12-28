@@ -13,5 +13,5 @@
   "requires_billing": true,
   "issue_tracker": "https://issuetracker.google.com/issues/new?component=460446",
   "api_shortname": "orchestration-airflow",
-  "library_type": ""
+  "library_type": "GAPIC_AUTO"
 }
