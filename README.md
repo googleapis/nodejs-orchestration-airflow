@@ -6,7 +6,6 @@
 
 
 [![npm version](https://img.shields.io/npm/v/@google-cloud/orchestration-airflow.svg)](https://www.npmjs.org/package/@google-cloud/orchestration-airflow)
-[![codecov](https://img.shields.io/codecov/c/github/googleapis/nodejs-orchestration-airflow/main.svg?style=flat)](https://codecov.io/gh/googleapis/nodejs-orchestration-airflow)
 
 
 
