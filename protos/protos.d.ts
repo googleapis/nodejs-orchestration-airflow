@@ -126,35 +126,35 @@ export namespace google {
                         namespace Environments {
 
                             /**
-                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1.Environments#createEnvironment}.
+                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1.Environments|createEnvironment}.
                              * @param error Error, if any
                              * @param [response] Operation
                              */
                             type CreateEnvironmentCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                             /**
-                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1.Environments#getEnvironment}.
+                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1.Environments|getEnvironment}.
                              * @param error Error, if any
                              * @param [response] Environment
                              */
                             type GetEnvironmentCallback = (error: (Error|null), response?: google.cloud.orchestration.airflow.service.v1.Environment) => void;
 
                             /**
-                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1.Environments#listEnvironments}.
+                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1.Environments|listEnvironments}.
                              * @param error Error, if any
                              * @param [response] ListEnvironmentsResponse
                              */
                             type ListEnvironmentsCallback = (error: (Error|null), response?: google.cloud.orchestration.airflow.service.v1.ListEnvironmentsResponse) => void;
 
                             /**
-                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1.Environments#updateEnvironment}.
+                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1.Environments|updateEnvironment}.
                              * @param error Error, if any
                              * @param [response] Operation
                              */
                             type UpdateEnvironmentCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                             /**
-                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1.Environments#deleteEnvironment}.
+                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1.Environments|deleteEnvironment}.
                              * @param error Error, if any
                              * @param [response] Operation
                              */
@@ -2235,7 +2235,7 @@ export namespace google {
                         namespace ImageVersions {
 
                             /**
-                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1.ImageVersions#listImageVersions}.
+                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1.ImageVersions|listImageVersions}.
                              * @param error Error, if any
                              * @param [response] ListImageVersionsResponse
                              */
@@ -2834,49 +2834,49 @@ export namespace google {
                         namespace Environments {
 
                             /**
-                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1beta1.Environments#createEnvironment}.
+                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1beta1.Environments|createEnvironment}.
                              * @param error Error, if any
                              * @param [response] Operation
                              */
                             type CreateEnvironmentCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                             /**
-                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1beta1.Environments#getEnvironment}.
+                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1beta1.Environments|getEnvironment}.
                              * @param error Error, if any
                              * @param [response] Environment
                              */
                             type GetEnvironmentCallback = (error: (Error|null), response?: google.cloud.orchestration.airflow.service.v1beta1.Environment) => void;
 
                             /**
-                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1beta1.Environments#listEnvironments}.
+                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1beta1.Environments|listEnvironments}.
                              * @param error Error, if any
                              * @param [response] ListEnvironmentsResponse
                              */
                             type ListEnvironmentsCallback = (error: (Error|null), response?: google.cloud.orchestration.airflow.service.v1beta1.ListEnvironmentsResponse) => void;
 
                             /**
-                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1beta1.Environments#updateEnvironment}.
+                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1beta1.Environments|updateEnvironment}.
                              * @param error Error, if any
                              * @param [response] Operation
                              */
                             type UpdateEnvironmentCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                             /**
-                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1beta1.Environments#deleteEnvironment}.
+                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1beta1.Environments|deleteEnvironment}.
                              * @param error Error, if any
                              * @param [response] Operation
                              */
                             type DeleteEnvironmentCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                             /**
-                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1beta1.Environments#restartWebServer}.
+                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1beta1.Environments|restartWebServer}.
                              * @param error Error, if any
                              * @param [response] Operation
                              */
                             type RestartWebServerCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                             /**
-                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1beta1.Environments#checkUpgrade}.
+                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1beta1.Environments|checkUpgrade}.
                              * @param error Error, if any
                              * @param [response] Operation
                              */
@@ -5715,7 +5715,7 @@ export namespace google {
                         namespace ImageVersions {
 
                             /**
-                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1beta1.ImageVersions#listImageVersions}.
+                             * Callback as used by {@link google.cloud.orchestration.airflow.service.v1beta1.ImageVersions|listImageVersions}.
                              * @param error Error, if any
                              * @param [response] ListImageVersionsResponse
                              */
@@ -8639,6 +8639,9 @@ export namespace google {
             /** FieldOptions lazy */
             lazy?: (boolean|null);
 
+            /** FieldOptions unverifiedLazy */
+            unverifiedLazy?: (boolean|null);
+
             /** FieldOptions deprecated */
             deprecated?: (boolean|null);
 
@@ -8675,6 +8678,9 @@ export namespace google {
 
             /** FieldOptions lazy. */
             public lazy: boolean;
+
+            /** FieldOptions unverifiedLazy. */
+            public unverifiedLazy: boolean;
 
             /** FieldOptions deprecated. */
             public deprecated: boolean;
@@ -10477,35 +10483,35 @@ export namespace google {
         namespace Operations {
 
             /**
-             * Callback as used by {@link google.longrunning.Operations#listOperations}.
+             * Callback as used by {@link google.longrunning.Operations|listOperations}.
              * @param error Error, if any
              * @param [response] ListOperationsResponse
              */
             type ListOperationsCallback = (error: (Error|null), response?: google.longrunning.ListOperationsResponse) => void;
 
             /**
-             * Callback as used by {@link google.longrunning.Operations#getOperation}.
+             * Callback as used by {@link google.longrunning.Operations|getOperation}.
              * @param error Error, if any
              * @param [response] Operation
              */
             type GetOperationCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
             /**
-             * Callback as used by {@link google.longrunning.Operations#deleteOperation}.
+             * Callback as used by {@link google.longrunning.Operations|deleteOperation}.
              * @param error Error, if any
              * @param [response] Empty
              */
             type DeleteOperationCallback = (error: (Error|null), response?: google.protobuf.Empty) => void;
 
             /**
-             * Callback as used by {@link google.longrunning.Operations#cancelOperation}.
+             * Callback as used by {@link google.longrunning.Operations|cancelOperation}.
              * @param error Error, if any
              * @param [response] Empty
              */
             type CancelOperationCallback = (error: (Error|null), response?: google.protobuf.Empty) => void;
 
             /**
-             * Callback as used by {@link google.longrunning.Operations#waitOperation}.
+             * Callback as used by {@link google.longrunning.Operations|waitOperation}.
              * @param error Error, if any
              * @param [response] Operation
              */
